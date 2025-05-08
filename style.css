@@ -126,6 +126,11 @@ header .navbar ul li a:hover::after , header .navbar ul li a.active::after{
                 0 0 15px var(--btn-clr);
 }
 
+/* Section */
+section{
+    padding: 2% 10%;
+}
+
 
 /* Hero Section */
 .hero-container{
@@ -200,7 +205,7 @@ header .navbar ul li a:hover::after , header .navbar ul li a.active::after{
 .hero-btn .btn{
     position: relative;
     display: inline-flex;
-    align-items: centter;
+    align-items: center;
     justify-content: center;
     width: 10rem;
     height: 100%;
@@ -247,3 +252,38 @@ header .navbar ul li a:hover::after , header .navbar ul li a.active::after{
 .btn:hover::before{
     width: 100%;
 }
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.stats .stat {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    min-width: 200px;
+}
+
+.stats .stat:not(:last-child){
+    border-right: 1px solid var(--text-clr);
+    padding-right: 5%;
+}
+
+.stats .stat h2{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.stats .stat span{
+    display: inline-block;
+    color: var(--light-text-clr);
+    font-size: 1.1rem;
+}
+
